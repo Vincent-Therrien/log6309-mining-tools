@@ -1,0 +1,41 @@
+
+=== Evaluation on HDFS ===
+Parsing file: ../logs/HDFS/HDFS_2k.log
+=== Step 1: Erasing parameters ===
+the parameter v is: 6
+there are 2000 loglines
+Loading distance matrix from cache..
+kMeans calculation...
+the threshold1 is: [4.83304332]
+================get the initial groups splitting=============
+there are 11 groups
+splitting into different groups...
+the split_threshold is 3
+Merge the lists together...
+there are 14 different groups
+Parsing done. [Time taken: 0:00:45.343391]
+Precision: 1.0000, Recall: 1.0000, F1_measure: 1.0000, Parsing_Accuracy: 1.0000
+
+=== Evaluation on BGL ===
+Parsing file: ../logs/BGL/BGL_2k.log
+=== Step 1: Erasing parameters ===
+the parameter v is: 5
+there are 2000 loglines
+Loading distance matrix from cache..
+kMeans calculation...
+the threshold1 is: [3.36726541]
+================get the initial groups splitting=============
+there are 185 groups
+splitting into different groups...
+the split_threshold is 30
+there is no common part in this group
+Merge the lists together...
+there are 538 different groups
+Parsing done. [Time taken: 0:00:29.291534]
+Precision: 1.0000, Recall: 0.8920, F1_measure: 0.9429, Parsing_Accuracy: 0.6455
+
+=== Overall evaluation results ===
+         F1_measure  Accuracy
+Dataset                      
+HDFS       1.000000    1.0000
+BGL        0.942901    0.6455

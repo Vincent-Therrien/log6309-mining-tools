@@ -1,0 +1,16 @@
+
+=== Evaluation on HDFS ===
+Parsing file: ../logs/HDFS/HDFS_2k.log
+Parsing done. [Time taken: 0:00:01.298232]
+Precision: 1.0000, Recall: 1.0000, F1_measure: 1.0000, Parsing_Accuracy: 0.9975
+
+=== Evaluation on BGL ===
+Parsing file: ../logs/BGL/BGL_2k.log
+Parsing done. [Time taken: 0:00:04.892979]
+Precision: 0.9961, Recall: 0.9928, F1_measure: 0.9944, Parsing_Accuracy: 0.7110
+
+=== Overall evaluation results ===
+         F1_measure  Accuracy
+Dataset                      
+HDFS       0.999984    0.9975
+BGL        0.994450    0.7110

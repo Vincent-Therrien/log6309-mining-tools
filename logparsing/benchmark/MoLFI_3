@@ -1,0 +1,20 @@
+
+=== Evaluation on HDFS ===
+Loading log messages to dataframe...
+Loading 2000 messages done, loading rate: 100.0%
+After deduplicating processing [16] lines...
+Parsing done. [Time taken: 0:00:03.890629]
+Precision: 1.0000, Recall: 1.0000, F1_measure: 1.0000, Parsing_Accuracy: 0.9975
+
+=== Evaluation on BGL ===
+Loading log messages to dataframe...
+Loading 2000 messages done, loading rate: 100.0%
+After deduplicating processing [205] lines...
+Parsing done. [Time taken: 0:00:25.587701]
+Precision: 0.9994, Recall: 0.9997, F1_measure: 0.9996, Parsing_Accuracy: 0.9570
+
+=== Overall evaluation results ===
+         F1_measure  Accuracy
+Dataset                      
+HDFS       0.999984    0.9975
+BGL        0.999550    0.9570

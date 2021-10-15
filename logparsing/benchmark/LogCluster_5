@@ -1,0 +1,20 @@
+
+=== Evaluation on HDFS ===
+Parsing file: ../logs/HDFS/HDFS_2k.log
+Run LogCluster command...
+>> perl ../logparser/LogCluster/logcluster.pl --input logcluster_input.log -rsupport 10 > logcluster_output.txt
+Parsing done. [Time taken: 0:00:00.204007]
+Precision: 1.0000, Recall: 0.9081, F1_measure: 0.9519, Parsing_Accuracy: 0.5460
+
+=== Evaluation on BGL ===
+Parsing file: ../logs/BGL/BGL_2k.log
+Run LogCluster command...
+>> perl ../logparser/LogCluster/logcluster.pl --input logcluster_input.log -rsupport 2 > logcluster_output.txt
+Parsing done. [Time taken: 0:00:00.200015]
+Precision: 0.9989, Recall: 0.9950, F1_measure: 0.9970, Parsing_Accuracy: 0.8350
+
+=== Overall evaluation results ===
+         F1_measure  Accuracy
+Dataset                      
+HDFS       0.951863     0.546
+BGL        0.996965     0.835

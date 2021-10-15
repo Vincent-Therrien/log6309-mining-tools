@@ -1,0 +1,38 @@
+
+=== Evaluation on HDFS ===
+Parsing file: ../logs/HDFS/HDFS_2k.log
+Compile SLCT...
+>> gcc -o ../logparser/SLCT/slct -O2 ../logparser/SLCT/cslct.c
+Run SLCT...
+>> ../logparser/SLCT/slct -j -o slct_outliers.log -r -s 120 slct_input.log
+Dumping event templates...
+Processing log file: ../logs/HDFS/HDFS_2k.log
+Loading log messages to dataframe...
+Loading 2000 messages done, loading rate: 100.0%
+Matching event templates...
+Worker 509 start matching 2000 lines.
+Matching done, matching rate: 100.0% [Time taken: 0:00:00.158854]
+Parsing done. [Time: 0:00:00.679073]
+Precision: 0.9711, Recall: 0.9606, F1_measure: 0.9658, Parsing_Accuracy: 0.5450
+
+=== Evaluation on BGL ===
+Parsing file: ../logs/BGL/BGL_2k.log
+Compile SLCT...
+>> gcc -o ../logparser/SLCT/slct -O2 ../logparser/SLCT/cslct.c
+Run SLCT...
+>> ../logparser/SLCT/slct -j -o slct_outliers.log -r -s 6 slct_input.log
+Dumping event templates...
+Processing log file: ../logs/BGL/BGL_2k.log
+Loading log messages to dataframe...
+Loading 2000 messages done, loading rate: 100.0%
+Matching event templates...
+Worker 509 start matching 2000 lines.
+Matching done, matching rate: 97.8% [Time taken: 0:00:00.773109]
+Parsing done. [Time: 0:00:01.259044]
+Precision: 0.9931, Recall: 0.9202, F1_measure: 0.9552, Parsing_Accuracy: 0.5725
+
+=== Overall evaluation results ===
+         F1_measure  Accuracy
+Dataset                      
+HDFS       0.965812    0.5450
+BGL        0.955247    0.5725
